@@ -1,0 +1,124 @@
+body {
+  background: wheat;
+}
+
+h4 {
+  text-align: center;
+  background-color: #fefefd;
+  border-radius: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  color: red;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.Shohag {
+  width: 370px;
+  margin: auto;
+  height: auto;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  height: 630px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: lightgray;
+}
+
+input[type=button] {
+  width: 200%;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+#del {
+  width: 50%;
+  padding-right: 25px;
+  padding-left: 25px;
+  background-color: lightgreen;
+  border-radius: 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 30px;
+}
+
+#ss {
+  background-color: lightyellow;
+  color: red;
+  border-radius: 10px;
+  width: 20%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 30px;
+}
+
+#rr {
+  background-color: lightblue;
+  border-radius: 10px;
+  width: 15%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 30px;
+}
+
+#pp {
+  background-color: #fad99d;
+  color: white;
+  border-radius: 10px;
+  color: black;
+  width: 15%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 30px;
+}
+
+#ll {
+  background-color: pink;
+  border-radius: 10px;
+  color: #121152;
+  width: 20%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 30px;
+}
+
+#ii {
+  background-color: violet;
+  color: white;
+  border-radius: 10px;
+  width: 20%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 30px;
+}
+
+#dot {
+  background-color: #e3fef7;
+  border-radius: 15px;
+  color: red;
+  padding-left: 29px;
+  padding-right: 29px;
+  width: 48%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 30px;
+}

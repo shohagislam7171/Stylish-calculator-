@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
+  <title>Stylish Calculator</title>
+  <link rel="stylesheet" href="style.css" title="" type="" />
+  <style type="text/css" media="all">
+    body {
+  background: wheat;
+
+}
+h4 {
+  text-align: center;
+  background-color: #fefefd;
+  border-radius: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  color: red;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.Shohag {
+  width: 370px;
+  margin: auto;
+  height: auto;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  height: 630px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: lightgray ;
+}
+
+input[type=button] {
+  width: 200%;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+#del {
+  width: 50%;
+  padding-right: 25px;
+  padding-left: 25px;
+  background-color: lightgreen;
+  border-radius: 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 30px;
+}
+
+#ss {
+  background-color: lightyellow;
+  color: red;
+  border-radius: 10px;
+  width: 20%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 30px;
+}
+
+#rr {
+  background-color: lightblue;
+  border-radius: 10px;
+  width: 15%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 30px;
+}
+
+#pp {
+  background-color: #fad99d;
+  color: white;
+  border-radius: 10px;
+  color: black;
+  width: 15%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 30px;
+}
+
+#ll {
+  background-color: pink;
+  border-radius: 10px;
+  color: #121152;
+  width: 20%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 30px;
+}
+
+#ii {
+  background-color: violet;
+  color: white;
+  border-radius: 10px;
+  width: 20%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 30px;
+}
+
+#dot {
+  background-color: #e3fef7;
+  border-radius: 15px;
+  color: red;
+  padding-left: 29px;
+  padding-right: 29px;
+  width: 48%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 30px;
+}
+  </style>
+</head>
+<body>
+  <!-- Calculator Project -->
+  <div class="Shohag">
+    <form name="cal">
+      <input type="text" name="display" readonly >
+      <br><br> <br>
+      <input type="button" value="9" onclick="cal.display.value+='9'" id="ss">
+
+      <input type="button" value="8" onclick="cal.display.value+='8'" id="ss">
+
+      <input type="button" value="7" onclick="cal.display.value+='7'" id="ss">
+
+      <input type="button" value="+" onclick="cal.display.value+='+'" id="pp">
+   <input type="button" value="sin" onclick="calculateSin()" id="ll">
+      <br><br>
+
+      <input type="button" value="6" onclick="cal.display.value+='6'" id="ss">
+
+      <input type="button" value="5" onclick="cal.display.value+='5'" id="ss">
+
+      <input type="button" value="4" onclick="cal.display.value+='4'" id="ss">
+
+      <input type="button" value="-" onclick="cal.display.value+='-'" id="pp">
+
+      <input type="button" value="cos" onclick="cal.display.value+='cos'" id="ll">
+
+      <br><br>
+
+      <input type="button" value="3" onclick="cal.display.value+='3'" id="ss">
+
+      <input type="button" value="2" onclick="cal.display.value+='2'" id="ss">
+
+      <input type="button" value="1" onclick="cal.display.value+='1'" id="ss">
+
+      <input type="button" value="*" onclick="cal.display.value+='*'" id="pp">
+
+      <input type="button" value="tan" onclick="cal.display.value+='tan'" id="ll">
+      <br><br>
+
+      <input type="button" value="0" onclick="cal.display.value+='0'" id="ss">
+
+      <input type="button" value="/" onclick="cal.display.value+='/'" id="ii">
+
+      <input type="button" value="%" onclick="cal.display.value+='%'" id="ii">
+
+      <input type="button" value="=" onclick="cal.display.value=eval(cal.display.value)" id="rr">
+      <input type="button" value="log" onclick="cal.display.value+='log'" id="ll">
+
+      <br><br>
+      <input type="button" value="." onclick="cal.display.value+='.'" id="dot">
+      <button value="DELETE" onclick="cal.display.value=''" id="del">AC</button>
+
+    </form>
+    <br />
+    <br />
+    <p> &copy; Created by Md Shohag Islam </p>
+  </div>
+  <script>
+function calculateSin() {
+  const display = document.cal.display;
+  const currentValue = parseFloat(display.value);
+  display.value = Math.sin(currentValue).toFixed(4); // Calculate and display the sine value
+}
+
+function calculateCos() {
+  const display = document.cal.display;
+  const currentValue = parseFloat(display.value);
+  display.value = Math.cos(currentValue).toFixed(4); // Calculate and display the cosine value
+}
+
+function calculateTan() {
+  const display = document.cal.display;
+  const currentValue = parseFloat(display.value);
+  display.value = Math.tan(currentValue).toFixed(4); // Calculate and display the tangent value
+}
+</script>
+
+</body>
+
+</html>
